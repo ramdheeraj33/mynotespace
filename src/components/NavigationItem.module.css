@@ -1,0 +1,29 @@
+.NavigationItem {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+}
+
+.NavigationItem a {
+  color: #464646;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  
+}
+
+.NavigationItem a:hover {
+  background-color:rgba(172, 172, 172, 0.247);
+}
+
+.NavigationItem a.active,
+.NavigationItem a.active:hover {
+  background-color: rgba(172, 172, 172, 0.247);
+}
+
+/* #f1b10336 */

@@ -1,0 +1,46 @@
+
+.SideBar {
+    position: fixed;
+    width: 220px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 85px;
+    background-color: rgb(255, 255, 255);
+    padding: 16px 0;
+    box-sizing: border-box;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    transition: transform 0.2s ease-out;
+}
+
+@media (max-width: 780px) {
+    .SideBar {
+      transform: translateX(-100%);
+      box-shadow: none;
+      
+    }
+  }
+
+
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+@media (max-width: 780px) {
+.Open {
+  transform: translateX(0);
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+  
+}
+}
+@media (max-width: 780px) {
+.Close {
+  transform: translateX(-100%);
+  box-shadow: none;
+}
+}
+
+

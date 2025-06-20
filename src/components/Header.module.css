@@ -1,0 +1,367 @@
+.header {
+  position: fixed;
+  background-color: #79a3b1;
+  margin: auto;
+  padding: 10px 32px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  border-bottom: solid 1px rgb(192, 192, 192);
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header h1 {
+  color: #ffffff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  display: inline;
+  /* text-shadow: 1px 1px #666666; */
+  vertical-align: middle;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+/* #f5ba13 */
+/* #dadada */
+/* #79a3b1 */
+/* #8db596 */
+/* #839b97 */
+/* #c56183 */
+
+.Search {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  display: flex;
+  left: 80px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  min-width: 180px;
+  vertical-align: middle;
+  padding: 0 10px;
+  align-items: center;
+}
+.Search input {
+  display: inline-block;
+  width: 79%;
+  height: 100%;
+  border: none;
+  margin-left: 5px;
+  font-size: 20px;
+  background-color: rgba(141, 141, 141, 0);
+  outline: none;
+  flex-grow: 1;
+}
+
+.Search .RightButtons{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.HamburgerMenu {
+  color: white;
+  font-size: 35px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* @media (max-width: 1000px) {
+  .Search {
+    width: 480px;
+  }
+  .Search input {
+    width: 70%;
+  }
+}
+@media (max-width: 780px) {
+  .Keeper {
+    display: none;
+  }
+  .Search {
+    left: 50px;
+    height: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .Search {
+    width: 350px;
+    left: 30px;
+  }
+  .Search input {
+    width: 60%;
+  }
+}
+
+@media (max-width: 533px) {
+  .Search {
+    width: 70%;
+  }
+  .Search input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 460px) {
+  .Search input {
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    padding-left: 13px;
+  }
+  .Search {
+    left: 10px;
+  }
+} */
+
+.SearchButton {
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+
+.ClearButton {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 10px; */
+}
+
+.PaletteButton {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+}
+
+.LogoutButton {
+  /* display: inline-block;
+  position: relative; */
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  top: 4px;
+  margin-left: 10px;
+  
+}
+
+.LogoutButton .Logout {
+  display: inline-block;
+  background-color: inherit;
+  border: 1.5px solid rgb(219, 219, 219);
+  outline: none;
+  border-radius: 3px;
+  height: 40px;
+  width: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.LogoutButton .Cloud {
+  display: inline-block;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  /* cursor: pointer; */
+  font-size: 15px;
+  margin-right: 15px;
+  border-radius: 100%;
+}
+
+.LogoutButton .Red {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  font-size: 13px;
+  background-color:rgb(167, 80, 80);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+
+
+.LogoutButton .Loader {
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid #72acc0; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.Search button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  color: #6d6d6d;
+  cursor: pointer;
+}
+
+.LogoutButton button:hover,
+.LogoutButton button:active {
+  background-color: rgba(172, 172, 172, 0.247);
+}
+
+.LogoutButton .Red:hover,
+.LogoutButton .Red:active {
+  background-color: rgb(209, 113, 113);
+}
+
+.SearchButton button:hover,
+.SearchButton button:active {
+  background-color: rgba(172, 172, 172, 0.247);
+}
+
+.ClearButton button:hover,
+.ClearButton button:active {
+  background-color: rgba(172, 172, 172, 0.247);
+}
+
+.PaletteButton button:hover,
+.PaletteButton button:active {
+  background-color: rgba(172, 172, 172, 0.247);
+}
+
+.white {
+  background-color: #ffffff;
+}
+.red {
+  background-color: #ffcfcf;
+}
+
+.orange {
+  background-color: #ffe3be;
+}
+
+.yellow {
+  background-color: #fffccb;
+}
+
+.green {
+  background-color: #edffcd;
+}
+.turquoise {
+  background-color: #d3fff8;
+}
+
+.blue {
+  background-color: #d5f2ff;
+}
+.darkblue {
+  background-color: #d7ddfd;
+}
+.purple {
+  background-color: #e8dbff;
+}
+
+.pink {
+  background-color: #fdd8f4;
+}
+
+
+@media (min-width: 781px) {
+  .HamburgerMenu {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1030px) {
+  .Search {
+    left: 60px;
+  }
+  .Search input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 780px) {
+  .Keeper {
+    display: none;
+  }
+  .Search {
+    left: 50px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .Search {
+    left: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Search {
+    width: 75%;
+    max-width: 250px;
+    left: 10px;
+  }
+  .Search input {
+    width: 50%;
+  }
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .LogoutButton .Logout {
+    width: 45px;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .LogoutButton .Red {
+    font-size: 9px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .LogoutButton .Cloud {
+    margin-right: 10px;
+  }
+
+  /* .LogoutButton {
+    justify-content: space-between;
+  } */
+}
+
+@media (max-width: 400px) {
+  .Search {
+    max-width: 235px;
+  }
+
+  .LogoutButton .Logout {
+    height: 25px;
+    font-size: 9px;
+  }
+
+  .LogoutButton .Red {
+    margin-right: 5px;
+  }
+
+  .LogoutButton .Cloud {
+    margin: 0 5px;
+    
+  }
+}

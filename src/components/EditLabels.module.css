@@ -1,0 +1,124 @@
+.Form {
+    z-index: 500;
+    position: fixed;
+    top: 35%;
+    width: 300px;
+    margin: 30px auto 20px auto;
+    left: 40%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+  }
+  
+  
+  @media (max-width: 780px) {
+    .Form {
+      left: 30%;
+    }
+  }
+  @media (max-width: 700px) {
+    .Form {
+      left: 27%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .Form {
+      left: 23%;
+    }
+  }
+  
+  @media (max-width: 533px) {
+    .Form {
+      width: 240px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .Form {
+      left: 20%;
+    }
+  }
+
+  @media (max-width: 370px) {
+    .Form {
+      left: 17%;
+    }
+  }
+  
+  .InputArea input {
+    width: 100%;
+    border: none;
+    padding: 5px 10px 5px 20px;
+    outline: none;
+    font-size: 1.1em;
+    font-family: inherit;
+    resize: none;
+    margin-right: 10px;
+  }
+  .InputArea p {
+    width: 100%;
+    border: none;
+    padding: 5px 10px 5px 20px;
+    outline: none;
+    font-size: 1em;
+    font-family: inherit;
+    resize: none;
+    margin-right: 10px;
+    font-weight: 600;
+    color: rgb(2, 2, 2);
+  }
+
+  .Form .InputArea {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .Form ul {
+    font-size: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .Form li {
+    list-style: none;
+  }
+
+  .Form .Item {
+      display: inline-block;
+      width: 100%;
+      padding: 5px 20px 0 0;
+  }
+  
+  .Form button {
+    /* position: absolute;
+    right: 18px; */
+    bottom: 0px;
+    position: relative;
+    float: right;
+    padding-top: 5px;
+    margin: 0 10px;
+    background: white;
+    color: #646464cb;
+    border: none;
+    border-radius: 100%;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .Form button:hover,
+  .Form button:active {
+    background-color: rgba(172, 172, 172, 0.247);
+  }
+  
+  .Buttons {
+    height: 30px;
+  }
+
+  .DoneButton button{
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  /* #f5ba13 */
